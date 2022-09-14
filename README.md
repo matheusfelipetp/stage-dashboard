@@ -1,7 +1,7 @@
 # 🏢 Stage Dashboard
 Projeto final do Módulo 2 da Kenzie Academy Brasil. O objetivo era criar uma plataforma de gerencimaneto empresarial, onde tanto o funcionário, quanto o administrador pudessem ter acesso aos seus respectivos dashboards com funcionalidades diferentes, desde a visuzalição de informações simples até a contratação/demissão de um funcionário. O design também foi criado do zero.
 
-A aplicação foi desenvolvida em HTML, CSS e JavaScript nativo, com utilização das bibiotelcas Axios, para realizar as requisições na API, e Toastify, para criar os toasts animados de feedback para o usuário. Também foi utilizado Programação Orientada a Objetos, clean code e boas práticas do GitFlow. Além disso, também foram utilizadas animações no CSS e o projeto está totalmente responsivo para todas as telas.
+A aplicação foi desenvolvida em HTML, CSS e JavaScript nativo, com utilização das bibiotelcas Axios, para realizar as requisições na API, e Toastify, para criar os toasts animados de feedback para o usuário. Também foi utilizado Programação Orientada a Objetos, clean code, boas práticas do GitFlow e mobile first. Além disso, também foram utilizadas animações no CSS e o projeto está totalmente responsivo para todas as telas.
 
 ## 💻 Tecnologia
 - HTML5
