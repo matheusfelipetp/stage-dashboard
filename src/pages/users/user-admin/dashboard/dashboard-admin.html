@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/src/assets/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="/src/styles/styles.css">
+  <link rel="stylesheet" href="../../user/dashboard/dashboard.css">
+  <link rel="stylesheet" href="./dashboard-admin.css">
+
+  <title>Stage - Dashboard Admin</title>
+</head>
+
+<body class="bg-body">
+  <header class="header bg-header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="/src/assets/logo.svg" alt="Logo">
+        <h2 class="color-brand-1 font-title-3">Stage</h2>
+      </div>
+      <div class="header__nav">
+        <nav class="nav__menu bg-header hidden">
+          <ul class="nav__list">
+            <li>
+              <p id="dashboard-page" class="font-text-3 color-grey-0">Dashboard</p>
+              <img src="/src/assets/dashboard.svg" alt="Home">
+            </li>
+            <li>
+              <p id="departament-page" class="font-text-3 color-grey-0">Departamentos</p>
+              <img src="/src/assets/departament.svg" alt="Login">
+            </li>
+            <li>
+              <p id="company-page" class="font-text-3 color-grey-0">Empresas</p>
+              <img src="/src/assets/company-menu.svg" alt="Register">
+            </li>
+            <li>
+              <p id="sector-page" class="font-text-3 color-grey-0">Setores</p>
+              <img src="/src/assets/sector.svg" alt="Register">
+            </li>
+            <li>
+              <p id="logout" class="font-text-3 color-grey-0">Sair</p>
+              <img src="/src/assets/logout.svg" alt="Register">
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__btns">
+        <label class="switch">
+          <input id="checkbox" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <button class="btn-mobile">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="infos bg-brand-1">
+    <div class="container">
+      <div class="user-infos">
+        <img src="/src/assets/admin.svg" alt="Admin">
+        <p class="font-text-3 color-white">Acesso de administrador</p>
+      </div>
+      <h1 class="font-title-3 color-white down-text">Dashboard</h1>
+    </div>
+  </section>
+
+  <main class="main container">
+    <h1 id="welcome-user" class="font-title-4 color-grey-0 show-text">Bem-vindo, admin!</h1>
+    <p class="font-text-2 color-grey-1 show-text">O que você quer fazer?</p>
+    <ul class="user-options">
+      <li id="departament-option" class="options bg-grey-4">
+        <div class="options__info">
+          <img src="/src/assets/departament.svg" alt="Departament">
+          <h3 class="font-title-5 color-grey-1">Departamentos</h3>
+        </div>
+        <p class="font-text-3 color-grey-1">Acesse a página de departamentos para total acesso as funcionalidades.</p>
+      </li>
+      <li id="sector-option" class="options bg-grey-4">
+        <div class="options__info">
+          <img src="/src/assets/sector.svg" alt="Sector">
+          <h3 class="font-title-5 color-grey-1">Setores</h3>
+        </div>
+        <p class="font-text-3 color-grey-1">Liste todos os setores existentes na plataforma.</p>
+      </li>
+      <li id="company-option" class="options bg-grey-4">
+        <div class="options__info">
+          <img src="/src/assets/company-menu.svg" alt="Sector">
+          <h3 class="font-title-5 color-grey-1">Empresas</h3>
+        </div>
+        <p class="font-text-3 color-grey-1">Acesse a página de empresas para total acesso as funcionalidades.</p>
+      </li>
+      <li id="users-option" class="options bg-grey-4">
+        <div class="options__info">
+          <img src="/src/assets/free.svg" alt="Sector">
+          <h3 class="font-title-5 color-grey-1">Usuários disponíveis</h3>
+        </div>
+        <p class="font-text-3 color-grey-1">Acesse todos os usuários disponíveis para contratação na plataforma.</p>
+      </li>
+    </ul>
+  </main>
+
+  <script type="module" src="/src/scripts/dashboard-admin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

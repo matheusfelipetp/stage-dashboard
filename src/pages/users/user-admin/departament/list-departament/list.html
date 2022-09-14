@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/src/assets/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="/src/styles/styles.css">
+  <link rel="stylesheet" href="../../../user/dashboard/dashboard.css">
+  <link rel="stylesheet" href="../../../user-admin/dashboard/dashboard-admin.css">
+  <link rel="stylesheet" href="../../../../../../index.css">
+  <link rel="stylesheet" href="../departament.css">
+  <link rel="stylesheet" href="./list.css">
+
+  <title>Stage - Departamentos</title>
+</head>
+
+<body class="bg-body">
+  <header class="header bg-header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="/src/assets/logo.svg" alt="Logo">
+        <h2 class="color-brand-1 font-title-3">Stage</h2>
+      </div>
+      <div class="header__nav">
+        <nav class="nav__menu bg-header hidden">
+          <ul class="nav__list">
+            <li>
+              <p id="dashboard-page" class="font-text-3 color-grey-0">Dashboard</p>
+              <img src="/src/assets/dashboard.svg" alt="Home">
+            </li>
+            <li>
+              <p id="departament-page" class="font-text-3 color-grey-0">Departamentos</p>
+              <img src="/src/assets/departament.svg" alt="Login">
+            </li>
+            <li>
+              <p id="company-page" class="font-text-3 color-grey-0">Empresas</p>
+              <img src="/src/assets/company-menu.svg" alt="Register">
+            </li>
+            <li>
+              <p id="sector-page" class="font-text-3 color-grey-0">Setores</p>
+              <img src="/src/assets/sector.svg" alt="Register">
+            </li>
+            <li>
+              <p id="logout" class="font-text-3 color-grey-0">Sair</p>
+              <img src="/src/assets/logout.svg" alt="Register">
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__btns">
+        <label class="switch">
+          <input id="checkbox" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <button class="btn-mobile">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="infos bg-brand-1">
+    <div class="container">
+      <div class="user-infos">
+        <img src="/src/assets/admin.svg" alt="Admin">
+        <p class="font-text-3 color-white">Acesso de administrador</p>
+      </div>
+      <h1 class="font-title-3 color-white down-text">Departamentos</h1>
+    </div>
+  </section>
+
+  <main class="main container">
+    <img class="image-light show-text" src="/src/assets/departament-list.svg" alt="">
+    <img class="image-dark hidden show-text" src="/src/assets/departament-list-dark.svg" alt="">
+    <div class="main__content show-text">
+      <h2 class="font-title-5 color-grey-0">Selecione uma empresa</h2>
+      <div class="select">
+        <select id="company"></select>
+      </div>
+      <h2 class="none-departament font-title-5 color-grey-0 down-text">Não existe nenhum departamento nessa empresa.</h2>
+      <ul id="info-departament" class="list-companies"></ul>
+    </div>
+  </main>
+
+  <section class="departament-selected container hidden down-text">
+    <button class="btn-back">Voltar</button>
+    <div class="selected__info">
+      <h1 class="selected-title font-title-3 color-grey-0">Nome do departamento</h1>
+      <img class="btn-edit" src="/src/assets/edit.svg" alt="Edit">
+      <img class="btn-delete" src="/src/assets/delete.svg" alt="Delete">
+    </div>
+    <p class="selected-description font-text-3 color-grey-1">Descrição do departamento</p>
+    <button id="btn-avaliable" class="btn-default">Contrate um funcionário</button>
+    <ul id="list-employee" class="list-companies"></ul>
+  </section>
+
+  <script type="module" src="/src/scripts/departament.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

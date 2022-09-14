@@ -1,0 +1,15 @@
+.infos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-4);
+  height: 220px;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .font-title-3 {
+    font-size: 2.5rem;
+  }
+}

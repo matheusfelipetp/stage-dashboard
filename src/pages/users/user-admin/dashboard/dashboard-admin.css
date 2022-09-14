@@ -1,0 +1,41 @@
+.user-infos {
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal__list li {
+  gap: var(--gap-3);
+  justify-content: unset;
+}
+.modal__list li img {
+  width: var(--gap-3);
+}
+
+@media (min-width: 1200px) {
+  .main > h1 {
+    margin-top: 2.5rem;
+  }
+  .main > p {
+    margin-bottom: var(--gap-3);
+  }
+  .user-options {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+  }
+  .options {
+    height: 100px;
+    width: 520px;
+  }
+  .options__info img {
+    top: 45px;
+  }
+  .options p {
+    max-width: 30ch;
+  }
+  .modal__list li p {
+    font: var(--font-text-3);
+    max-width: max-content;
+  }
+}

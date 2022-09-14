@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/assets/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="stylesheet" href="./index.css">
+
+  <title>Stage - HomePage</title>
+</head>
+
+<body class="bg-body">
+  <header class="header bg-header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="./src/assets/logo.svg" alt="Logo">
+        <h2 class="color-brand-1 font-title-3">Stage</h2>
+      </div>
+      <div class="header__nav">
+        <nav class="nav__menu bg-header hidden">
+          <ul class="nav__list">
+            <li>
+              <p id="home-page" class="font-text-2 color-grey-0">Página de início</p>
+              <img src="./src/assets/home.svg" alt="Home">
+            </li>
+            <li>
+              <p id="login-page" class="font-text-2 color-grey-0">Entre na sua conta</p>
+              <img src="./src/assets/login.svg" alt="Login">
+            </li>
+            <li>
+              <p id="register-page" class="font-text-2 color-grey-0">Cadastre-se</p>
+              <img src="./src/assets/register.svg" alt="Register">
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__btns">
+        <label class="switch">
+          <input id="checkbox" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <button class="btn-mobile">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="infos bg-brand-1">
+    <div class="container">
+      <h1 class="font-title-3 color-white down-text">Stage Dashboard</h1>
+      <p class="font-text-2 color-white down-text">Simplificando a sua empresa</p>
+    </div>
+  </section>
+
+  <main class="main">
+    <div class="container">
+      <img class="image-home show-text" src="./src/assets/homepage.svg" alt="Home Page">
+      <img class="image-home-dark hidden show-text" src="./src/assets/homepage-dark.svg" alt="Home Page">
+      <div class="main__content">
+        <h2 class="font-title-4 color-grey-0 show-text">Empresas que já utilizam nosso serviço</h2>
+        <div class="select">
+          <select name="sector" id="sector">
+            <option value="all">Todos os setores</option>
+            <option value="Alimenticio">Alimenticio</option>
+            <option value="Varejo">Varejo</option>
+            <option value="Textil">Textil</option>
+            <option value="Manufatura">Manufatura</option>
+            <option value="Aeroespacial">Aeroespacial</option>
+            <option value="Automotiva">Automotiva</option>
+            <option value="TI">TI</option>
+            <option value="Atacado">Atacado</option>
+          </select>
+        </div>
+        <ul class="list-companies"></ul>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./src/scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/src/assets/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="/src/styles/styles.css">
+  <link rel="stylesheet" href="../../user/dashboard/dashboard.css">
+  <link rel="stylesheet" href="../../user-admin/dashboard/dashboard-admin.css">
+  <link rel="stylesheet" href="./companies.css">
+
+  <title>Stage - Empresas</title>
+</head>
+
+<body class="bg-body">
+  <header class="header bg-header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="/src/assets/logo.svg" alt="Logo">
+        <h2 class="color-brand-1 font-title-3">Stage</h2>
+      </div>
+      <div class="header__nav">
+        <nav class="nav__menu bg-header hidden">
+          <ul class="nav__list">
+            <li>
+              <p id="dashboard-page" class="font-text-3 color-grey-0">Dashboard</p>
+              <img src="/src/assets/dashboard.svg" alt="Home">
+            </li>
+            <li>
+              <p id="departament-page" class="font-text-3 color-grey-0">Departamentos</p>
+              <img src="/src/assets/departament.svg" alt="Login">
+            </li>
+            <li>
+              <p id="company-page" class="font-text-3 color-grey-0">Empresas</p>
+              <img src="/src/assets/company-menu.svg" alt="Register">
+            </li>
+            <li>
+              <p id="sector-page" class="font-text-3 color-grey-0">Setores</p>
+              <img src="/src/assets/sector.svg" alt="Register">
+            </li>
+            <li>
+              <p id="logout" class="font-text-3 color-grey-0">Sair</p>
+              <img src="/src/assets/logout.svg" alt="Register">
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__btns">
+        <label class="switch">
+          <input id="checkbox" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <button class="btn-mobile">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="infos bg-brand-1">
+    <div class="container">
+      <div class="user-infos">
+        <img src="/src/assets/admin.svg" alt="Admin">
+        <p class="font-text-3 color-white">Acesso de administrador</p>
+      </div>
+      <h1 class="font-title-3 color-white down-text">Empresas</h1>
+    </div>
+  </section>
+
+  <main class="main container">
+    <button id="new-company" class="btn-default show-text">Cadastrar uma nova empresa</button>
+    <h2 class="font-title-4 color-grey-0 down-text">Suas empresas</h2>
+    <div class="main__search down-text">
+      <div class="search">
+        <input type="text" placeholder="Buscar pelo nome">
+        <img src="/src/assets/search.svg" alt="Search">
+      </div>
+      <div class="select">
+        <select name="sector" id="sector">
+          <option value="all">Todos os setores</option>
+          <option value="Alimenticio">Alimenticio</option>
+          <option value="Varejo">Varejo</option>
+          <option value="Textil">Textil</option>
+          <option value="Manufatura">Manufatura</option>
+          <option value="Aeroespacial">Aeroespacial</option>
+          <option value="Automotiva">Automotiva</option>
+          <option value="TI">TI</option>
+          <option value="Atacado">Atacado</option>
+        </select>
+      </div>
+    </div>
+
+    <ul class="admin-companies show-text"></ul>
+  </main>
+
+  <script type="module" src="/src/scripts/companies.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

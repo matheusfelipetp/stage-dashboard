@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/src/assets/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="/src/styles/styles.css">
+  <link rel="stylesheet" href="./dashboard.css">
+
+  <title>Stage - Dashboard</title>
+</head>
+
+<body class="bg-body">
+  <header class="header bg-header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="/src/assets/logo.svg" alt="Logo">
+        <h2 class="color-brand-1 font-title-3">Stage</h2>
+      </div>
+      <div class="header__nav">
+        <nav class="nav__menu bg-header hidden">
+          <ul class="nav__list">
+            <li>
+              <p id="dashboard-page" class="font-text-3 color-grey-0">Dashboard</p>
+              <img src="/src/assets/dashboard.svg" alt="Home">
+            </li>
+            <li>
+              <p id="departament-page" class="font-text-3 color-grey-0">Departamento</p>
+              <img src="/src/assets/departament.svg" alt="Login">
+            </li>
+            <li>
+              <p id="edit-page" class="font-text-3 color-grey-0">Editar informações</p>
+              <img src="/src/assets/edit.svg" alt="Register">
+            </li>
+            <li>
+              <p id="logout" class="font-text-3 color-grey-0">Sair</p>
+              <img src="/src/assets/logout.svg" alt="Register">
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__btns">
+        <label class="switch">
+          <input id="checkbox" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <button class="btn-mobile">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="infos bg-brand-1">
+    <div class="container">
+      <div class="user-infos">
+        <div class="user-company">
+          <img src="/src/assets/company.svg" alt="Company">
+          <p id="company-name" class="font-text-4 color-white">Nome da empresa</p>
+        </div>
+        <div class="user-company">
+          <img src="/src/assets/departament-light.svg" alt="Departament">
+          <p id="departament-name" class="font-text-4 color-white">Nome do departamento</p>
+        </div>
+      </div>
+      <h1 class="font-title-3 color-white down-text">Dashboard</h1>
+    </div>
+  </section>
+
+  <main class="main container">
+    <h1 id="welcome-user" class="font-title-4 color-grey-0 show-text">Bem-vindo, usuário!</h1>
+    <p class="font-text-2 color-grey-1 show-text">O que você quer fazer?</p>
+    <ul class="user-options">
+      <li id="departament-option" class="options bg-grey-4">
+        <div class="options__info">
+          <img src="/src/assets/departament.svg" alt="Departament">
+          <h3 class="font-title-5 color-grey-1">Departamento</h3>
+        </div>
+        <p class="font-text-3 color-grey-1">Listar todos os funcionários do meu departamento.</p>
+      </li>
+      <li id="edit-option" class="options bg-grey-4">
+        <div class="options__info">
+          <img src="/src/assets/edit.svg" alt="Departament">
+          <h3 class="font-title-5 color-grey-1">Editar informações</h3>
+        </div>
+        <p class="font-text-3 color-grey-1">Editar as informações da minha conta.</p>
+      </li>
+    </ul>
+  </main>
+
+  <script type="module" src="/src/scripts/dashboard-user.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

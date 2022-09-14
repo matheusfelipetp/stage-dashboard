@@ -1,0 +1,43 @@
+.select {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 25px;
+  overflow: hidden;
+  background: url('../assets/arrow.svg') no-repeat right #f0f0f0;
+  color: var(--color-grey-3);
+  border-radius: var(--radius-1);
+}
+
+.dark-mode .select {
+  background: url('../assets/arrow.svg') no-repeat right #112933;
+}
+
+#sector,
+#experience,
+#company,
+#departament,
+#user-exp,
+#kind-of-work,
+#all-users {
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font: var(--font-text-4);
+  color: var(--color-grey-3);
+  line-height: 2;
+  outline: none;
+}
+
+option {
+  background: #f0f0f0;
+  color: var(--color-grey-3);
+}
+
+.dark-mode option {
+  background: #112933;
+}

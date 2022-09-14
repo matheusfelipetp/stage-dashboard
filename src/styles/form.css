@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  height: max-content;
+  padding: var(--gap-2);
+  box-sizing: border-box;
+  border-radius: var(--radius-1);
+  border: 1px solid var(--color-brand-3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form > input,
+.form > .select {
+  margin-bottom: 16px;
+}
+
+.form > .select {
+  background: url('../assets/arrow.svg') no-repeat right var(--bg-input);
+  width: 100%;
+  border: 2px solid var(--color-brand-3);
+  height: 40px;
+}
+
+.form > label {
+  margin-bottom: 6px;
+}
+
+.form > input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 2px solid var(--color-brand-3);
+  border-radius: var(--radius-1);
+  background: var(--bg-input);
+  color: var(--color-grey-0);
+  outline-color: var(--color-brand-2);
+}
+
+.form > input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--color-grey-3);
+  font: var(--font-text-4);
+}
+
+.form__text {
+  margin-top: var(--gap-4);
+  text-align: center;
+}
+
+.form__text > span {
+  cursor: pointer;
+  color: #21ae76;
+  transition: 0.3s ease;
+}
+
+.form__text > span:hover {
+  color: #0e7e52;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  border: 2px solid var(--color-brand-3);
+  border-radius: var(--radius-1);
+  background: var(--bg-input);
+  color: var(--color-grey-0);
+  outline-color: var(--color-brand-2);
+  margin-bottom: 20px;
+  padding: 10px;
+  font: var(--font-text-4);
+}
+
+@media (min-width: 1200px) {
+  .form {
+    height: 500px;
+  }
+  .form > label {
+    margin-bottom: 10px;
+  }
+  .form > input,
+  .form > .select {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,151 @@
+.main.hidden {
+  display: none;
+}
+
+.main__content {
+  margin-top: -30px;
+}
+
+.main img {
+  display: none;
+  max-width: 500px;
+}
+
+.main h2 {
+  max-width: 40ch;
+}
+
+.options {
+  padding: var(--gap-4);
+}
+
+.options__info h3 {
+  margin-left: 0;
+}
+
+.options p {
+  margin-left: 0;
+}
+
+.select {
+  width: 200px;
+}
+
+.none-departament {
+  display: none;
+  margin-top: 2.5rem;
+}
+
+.image-dark.hidden,
+.image-light.hidden {
+  display: none;
+}
+
+.departament-selected.hidden {
+  display: none;
+}
+
+.departament-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3);
+  margin-top: 3.75rem;
+}
+
+.selected__info img {
+  width: var(--gap-1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.selected-description {
+  margin-top: var(--gap-4);
+  margin-bottom: var(--gap-2);
+}
+
+.selected-title,
+.selected-description {
+  text-align: center;
+}
+
+#list-employee .options {
+  margin: 0 auto;
+  margin-bottom: var(--gap-3);
+}
+
+#list-employee .options p::before {
+  display: inline-block;
+}
+
+.modal__content {
+  top: 240px;
+  gap: var(--gap-4);
+}
+
+textarea {
+  margin-top: var(--gap-3);
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (min-width: 1200px) {
+  .main__content {
+    margin-top: unset;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.75rem;
+  }
+  .main img {
+    display: block;
+    width: 100%;
+  }
+  .list-companies {
+    width: max-content;
+    height: 400px;
+  }
+  .options {
+    width: 400px;
+    align-self: flex-start;
+  }
+  .selected__info img:hover {
+    scale: 1.2;
+  }
+  #list-employee {
+    padding-right: var(--gap-3);
+    box-sizing: border-box;
+    gap: 0;
+  }
+  #list-employee .options {
+    padding: var(--gap-3);
+    height: max-content;
+    width: 500px;
+  }
+  .options p {
+    max-width: max-content;
+  }
+  #list-employee .options img {
+    width: 30px;
+    top: var(--gap-3);
+    transition: 0.3s ease;
+  }
+  #list-employee .options img:nth-child(2) {
+    top: 1.125rem;
+    right: 5.625rem;
+  }
+  #list-employee .options img:hover {
+    scale: 1.2;
+  }
+  textarea {
+    margin-top: var(--gap-3);
+    max-width: 380px;
+  }
+}

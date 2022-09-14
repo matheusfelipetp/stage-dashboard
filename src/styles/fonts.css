@@ -1,0 +1,30 @@
+.font-title-1 {
+  font: var(--font-title-1);
+}
+.font-title-2 {
+  font: var(--font-title-2);
+}
+.font-title-3 {
+  font: var(--font-title-3);
+}
+.font-title-4 {
+  font: var(--font-title-4);
+}
+.font-title-5 {
+  font: var(--font-title-5);
+}
+.font-text-1 {
+  font: var(--font-text-1);
+}
+.font-text-2 {
+  font: var(--font-text-2);
+}
+.font-text-3 {
+  font: var(--font-text-3);
+}
+.font-text-4 {
+  font: var(--font-text-4);
+}
+.font-text-5 {
+  font: var(--font-text-5);
+}
